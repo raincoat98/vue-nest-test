@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve:frontend": "cd frontend && npm run serve",
+    "serve:backend": "cd backend && nest start",
+    "start": "concurrently \"npm run serve:frontend\" \"npm run serve:backend\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
