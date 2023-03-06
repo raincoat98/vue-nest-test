@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "serve:backend": "cd backend && nest start",
+    "serve:backend": "cd backend && npm run start:dev",
     "serve:frontend": "cd frontend && npm run serve",
     "start": "concurrently \"npm run serve:frontend\" \"npm run serve:backend\""
   },
