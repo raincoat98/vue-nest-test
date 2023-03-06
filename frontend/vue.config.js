@@ -4,7 +4,7 @@ console.log(__dirname);
 module.exports = {
   pages: {
     index: {
-      entry: "src/main.js",
+      entry: "src/main.ts",
       template: "public/index.html", // source template
       filename: "index.html", // output as dist/index.html
       title: "Index Page", // when using title option,
@@ -17,19 +17,17 @@ module.exports = {
   },
   css: {
     extract: {
-      filename:
-        "filname" + "-" + require("./package.json").version + ".min.css",
+      filename: "test" + "-" + require("./package.json").version + ".min.css",
     },
   },
   configureWebpack: {
     output: {
-      filename: "filname" + "-" + require("./package.json").version + ".min.js",
+      filename: "test" + "-" + require("./package.json").version + ".min.js",
     },
     optimization: {
       splitChunks: false,
     },
   },
-
   pluginOptions: {
     vuetify: {
       // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
